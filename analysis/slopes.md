@@ -1,0 +1,9 @@
+50kyr_out: L4/L5 ratio slope: 2.481e-07 yr⁻¹
+100kyr_in: L4/L5 ratio slope: 1.238e-06 yr⁻¹
+50kyr_in: L4/L5 ratio slope: -1.830e-07 yr⁻¹
+500kyr_in: L4/L5 ratio slope: 1.477e-07 yr⁻¹
+100kyr_out: L4/L5 ratio slope: 2.481e-07 yr⁻¹
+500kyr_out: L4/L5 ratio slope: 1.238e-06 yr⁻¹
+50kyr_insitu: L4/L5 ratio slope: 2.279e-07 yr⁻¹
+100kyr_insitu: L4/L5 ratio slope: 5.468e-07 yr⁻¹
+500kyr_insitu: L4/L5 ratio slope: 7.152e-08 yr⁻¹
