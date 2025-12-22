@@ -1,0 +1,250 @@
+%Version 3.1 December 2024
+% See section 11 of the User Manual for version history
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
+
+%%=======================================================%%
+%% to print line numbers in the margin use lineno option %%
+%%=======================================================%%
+
+%%\documentclass[lineno,pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%=========================================================================================%%
+%% the documentclass is set to pdflatex as default. You can delete it if not appropriate.  %%
+%%=========================================================================================%%
+
+%%\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%Note: the following reference styles support Namedate and Numbered referencing. By default the style follows the most common style. To switch between the options you can add or remove Numbered in the optional parenthesis. 
+%%The option is available for: sn-basic.bst, sn-chicago.bst%  
+ 
+%%\documentclass[pdflatex,sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% Math and Physical Sciences Numbered Reference Style
+%%\documentclass[pdflatex,sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
+%%\documentclass[pdflatex,sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[pdflatex,sn-vancouver-num]{sn-jnl}% Vancouver Numbered Reference Style
+%%\documentclass[pdflatex,sn-vancouver-ay]{sn-jnl}% Vancouver Author Year Reference Style
+%%\documentclass[pdflatex,sn-apa]{sn-jnl}% APA Reference Style
+%%\documentclass[pdflatex,sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+%%%%
+
+%%%%%=============================================================================%%%%
+%%%%  Remarks: This template is provided to aid authors with the preparation
+%%%%  of original research articles intended for submission to journals published 
+%%%%  by Springer Nature. The guidance has been prepared in partnership with 
+%%%%  production teams to conform to Springer Nature technical requirements. 
+%%%%  Editorial and presentation requirements differ among journal portfolios and 
+%%%%  research disciplines. You may find sections in this template are irrelevant 
+%%%%  to your work and are empowered to omit any such section if allowed by the 
+%%%%  journal you intend to submit to. The submission guidelines and policies 
+%%%%  of the journal take precedence. A detailed User Manual is available in the 
+%%%%  template package for technical guidance.
+%%%%%=============================================================================%%%%
+
+%% as per the requirement new theorem styles can be included as shown below
+\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}% 
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\begin{document}
+
+\title[Article Title]{Evolution of Jupiter Trojan L4/L5 Asymmetry During Planetary Migration}
+
+%%=============================================================%%
+%% GivenName	-> \fnm{Joergen W.}
+%% Particle	-> \spfx{van der} -> surname prefix
+%% FamilyName	-> \sur{Ploeg}
+%% Suffix	-> \sfx{IV}
+%% \author*[1,2]{\fnm{Joergen W.} \spfx{van der} \sur{Ploeg} 
+%%  \sfx{IV}}\email{iauthor@gmail.com}
+%%=============================================================%%
+
+\author*[1]{\fnm{Colby} \sur{Malcolm}}\email{cmalcolm@strw.leidenuniv.nl}
+\equalcont{These authors contributed equally to this work.}
+
+\author*[1]{\fnm{Zoutong} \sur{Shen}}\email{zshen@strw.leidenuniv.nl}
+\equalcont{These authors contributed equally to this work.}
+
+
+\affil*[1]{\orgdiv{Leiden Observatory}, \orgname{Leiden University}, \orgaddress{\street{Postbus 9513, 2300 RA}, \city{Leiden}, \postcode{100190}, \country{The Netherlands}}}
+
+
+%%==================================%%
+%% Sample for unstructured abstract %%
+%%==================================%%
+
+\abstract{
+Jupiter Trojan asteroids occupy stable co-orbital regions near the L4 and L5 Lagrange points and are thought to preserve dynamical information about Jupiter’s early orbital evolution. Observations reveal a persistent asymmetry between the leading and trailing Trojan swarms, suggesting that this imbalance was established during a phase of planetary migration. We investigate how Jupiter’s radial migration influences the evolution of L4/L5 population asymmetry using controlled N-body simulations of the Solar System. Starting from symmetric Trojan populations established through a burn-in phase, we apply inward, outward, and absent migration scenarios across three migration timescales. We find that outward migration can produce a growing L4 excess for intermediate and long migration timescales, while rapid migration yields more variable behavior. Inward migration exhibits weaker and less systematic trends, and no-migration cases show small but nonzero fluctuations consistent with stochastic evolution. These results demonstrate that both the direction and timescale of Jupiter’s migration play a central role in shaping Trojan asymmetry.
+}
+
+
+%%================================%%
+%% Sample for structured abstract %%
+%%================================%%
+
+% \abstract{\textbf{Purpose:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Methods:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Results:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Conclusion:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.}
+
+%%\pacs[JEL Classification]{D8, H51}
+
+%%\pacs[MSC Classification]{35A01, 65L10, 65L12, 65L20, 65L70}
+
+\maketitle
+
+\section{Introduction}\label{sec1} %Colby
+Jupiter Trojan asteroids are small bodies locked in a 1:1 mean motion resonance with Jupiter, librating around the stable Lagrange points L4 and L5 that lead and trail the planet by approximately sixty degrees \cite{FLEMING2000479}. These regions are dynamically stable over long timescales, allowing Trojan populations to persist once established. With more than ten thousand known members, the Jupiter Trojan population represents one of the largest minor body reservoirs in the Solar System. It is widely regarded as a fossil record of Jupiter’s early dynamical evolution \cite{Li2023}. Early work explored in situ capture during Jupiter’s mass growth or smooth radial drift through a gaseous disk, showing that changes in Jupiter’s mass or semimajor axis can significantly reshape the co-orbital phase space and influence Trojan stability \cite{Li2023}. Later studies within the framework of planetary migration and dynamical instability emphasized that Trojan populations are sensitive to the timing, direction, and rate of Jupiter’s orbital evolution \cite{Li2023}.
+\par
+One of the most striking observational features of the present day Trojan population is the persistent asymmetry between the leading and trailing swarms. After correcting for observational biases, the number ratio of L4 to L5 Trojans is estimated to be approximately 1.67, indicating a significant excess of objects near L4 \cite{Freistetter2006}. This asymmetry cannot be explained by long term observational selection effects or by slow chaotic diffusion alone, suggesting that it was imprinted dynamically during an early phase of the Solar System’s evolution \cite{Li2023}. Recent work by Li et al. (2023) \cite{Li2023} proposed that rapid outward migration of Jupiter, such as that expected during a “jumping Jupiter” phase, can naturally generate an L4 excess. L4 Trojan orbits are driven toward smaller libration amplitudes and enhanced stability, while L5 Trojans are excited to larger amplitudes and preferentially destabilized, leading to a net depletion of the trailing L5 swarm \cite{Li2023}. 
+Earlier analytical and numerical studies similarly demonstrated that migration-induced deformation of the Trojan phase space depends sensitively on the direction and rate of Jupiter’s radial motion \cite{Li2023}.
+\par
+In this work, we investigate how Jupiter’s radial migration affects the L4/L5 population asymmetry of Trojan asteroids using controlled N-body simulations of the Solar System. Rather than modeling a specific formation pathway, our goal is to isolate the dynamical response of an evolved Trojan population to imposed inward, outward, or absent migration of Jupiter. We construct a suite of nine simulations combining the two migration directions and lack of migration scenario with three characteristic migration timescales. 
+Motivated by previous work, we adopt the following hypotheses. In the absence of migration, the L4/L5 population ratio should remain statistically stable. For outward migration, particularly more rapid inward migration, attributed to the discussed “jumping jupiter” scenario, we expect preferential destabilization of L5 Trojans and the development of an L4 excess, consistent with the mechanism proposed by Li et al. (2023) \cite{Li2023}. For inward migration, smooth and gradual evolution is expected to preserve symmetry, while for more rapid inward migration,  we adopt a similar expectation as in the outward migration case: that this rapid migration may induce a modest L4 preference through resonance distortion. By comparing the evolution of the L4/L5 ratio across these scenarios, we aim to assess how migration direction and timescale control the emergence of Trojan asymmetry.
+
+\section{Model}\label{sec2}
+\subsection{Initial Conditions and Simulation Framework}
+All simulations were performed using the AMUSE framework \cite{AMUSEversion, AMUSE1, AMUSE2, AMUSE3, AMUSEBOOK}, making use of the N-body HUAYNO integrator \cite{HUAYNO}, with massive bodies evolved self-consistently and planetesimals treated as massless test particles. The system consists of the Sun and seven planets, excluding Mercury. All planets interact gravitationally with one another throughout the integrations with HUAYNO, while only Jupiter is subjected to imposed radial migration in the migration runs. 10,000 massless test particles represent the planetesimal component, evolved in parallel using a vectorized leapfrog integrator. Test particles feel the gravitational potential of the massive bodies but do not interact with one another.
+Because our scientific focus is the evolution of Trojan populations rather than the efficiency of Trojan capture from a primordial disk, we adopt a two-stage initialization procedure to ensure well-defined and statistically robust Trojan samples. First, we performed a set of “pure disk” simulations. In the pure disk simulations, the initial planetesimal population consisted of $N = 10{,}000$ massless test particles with orbital elements drawn from a dynamically cold disk. Semimajor axes were sampled from a uniform distribution, $a \sim \mathcal{U}(a_{\min}, a_{\max})$,
+spanning the inner Solar System across Jupiter’s orbit. Initial eccentricities and inclinations were drawn from
+$e \sim \mathcal{U}(0, e_{\max}), \quad i \sim \mathcal{U}(0, i_{\max})$,
+with $e_{\max} \ll 1$ and $i_{\max} \ll 1$. Angular elements were uniformly randomized on $[0,2\pi)$. In these pure disk simulations, Jupiter was held fixed at its present-day semimajor axis and the system was evolved for 100 kyr without any migration. These runs allowed a small number of test particles to be captured naturally into the Trojan regions through resonant interactions with Jupiter. By tracing the orbital histories of these particles, as shown in Figure \ref{Fig1}, we identified the regions from which stable Trojan orbits originate. This analysis demonstrated that only a narrow subset of the disk contributes to long-lived Trojan populations.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{Figures/preseeding.png}
+    \caption{Identification of Trojan source regions in the pure disk simulation. Red stars denote particles that occupy stable Trojan orbits at the end of the integration, while green circles mark their corresponding initial locations in the disk. Particle trajectories are shown to illustrate transport into the L4 (left) and L5 (right) regions. Only a small subset of the initial disk is captured into long-lived Trojan orbits when Jupiter is held fixed at $a = 5.2\,\mathrm{AU}$, motivating targeted pre-seeding of the Trojan regions in subsequent simulations.}
+    \label{fig:pure_disk_trojans}
+    \label{Fig1}
+\end{figure}
+
+Motivated by the pure disk results, we pre-seeded the Trojan regions directly in subsequent simulations by initializing $N = 300$ test particles coorbital with Jupiter for a total of $600$ Trojan particles per run, with the remaining 9400 particles initialized as in the pure-disk case. Semimajor axes were drawn from a narrow window around Jupiter’s orbit,
+\[a = a_J + \Delta a, \quad \Delta a \sim \mathcal{U}(-0.1\,\mathrm{AU}, +0.1\,\mathrm{AU}),\]
+and mean longitudes were clustered around $\lambda_J \pm 60^\circ$ to populate the L4 and L5 regions. 
+This approach allows us to focus computational resources on Trojan population evolution, rather than on the stochastic capture process, which is not the subject of this study. Each simulation then undergoes a “burn-in” phase prior to migration, to allow the Trojan populations to dynamically settle. We consider three such burn-in configurations, corresponding to Jupiter initially placed at 4.8 AU, 5.2 AU, and 5.6 AU. These initial conditions serve as the starting points for outward migration, no migration, and inward migration scenarios, respectively. Following burn-in, we apply radial migration to Jupiter in our two migration cases, ensuring its endpoint corresponds to 5.2AU. For each case, we apply three characteristic migration timescales of 50 kyr, 100 kyr, and 500 kyr.
+For each combination of migration direction and timescale, we track the evolution of the L4 and L5 populations over the full integration, allowing direct comparison of how migration history influences Trojan asymmetry.
+
+\subsection{Migration Theory} \label{MigrationTheory} %Zoutong
+For a semi-major axis migration, the exponential decay law could be translated to a tangential velocity exchange rate of $\frac{dv_{\tan}}{dt} = -\frac{v_{\tan}}{2\tau_a}$. Since the migration timescale is about $\tau_{\mathrm{migration}} \sim 10^{5}\text{--}10^{6}\ \mathrm{yr}$, we adopt the formula for a type II migration, which reduces the required timescale given initial and final positions and migration period: $$\tau_a = -\frac{2t_{\mathrm{mig}}}{\ln\!\left(a_f/a_i\right)}$$
+The sign convention is set to be negative for inward migration and positive for outward migration. 
+
+To enable massless particles to evolve in the gravitational field, we used two bridges in the system. Bridge 1 includes Huayno's N-body solver to solve for all massive bodies in the solar system, excluding Mercury due to its proximity to the star, which would significantly increase runtime, and the innermost planet will not have a significant impact on the planetary distribution. The migration code is also included in Bridge 1. Bridge 2 is designed to handle the 10,000 planetesimals within the gravitational field of the massive bodies. We employ a half-kick, drift, half-kick strategy to match the coupling time step $\Delta t = 0.1 \mathrm{yr}$. The incremental velocity change of per half-kick is applied as $$\vec{v}_{\,n+1/2} = \vec{v}_{\,n} + \frac{1}{2}\vec{a}_{\,n}\,\Delta t$$
+%Two Bridges and how
+
+\section{Results}\label{sec3} %Colby 
+
+\begin{table}[t]
+\centering
+\caption{\textbf{Summary of Trojan asymmetry results for all simulations.} Listed are the L4/L5 population ratios measured immediately after the burn-in phase, the final ratios measured at the end of each simulation, and the slopes obtained from linear fits to the L4/L5 ratio evolution.}
+\begin{tabular}{lccc}
+\hline
+\hline
+Simulation Case & 
+Initial $N_{L4}/N_{L5}$ & 
+Final $N_{L4}/N_{L5}$ & 
+(Fitted) Slope ($*10^{-7}$ yr$^{-1} $) \\
+\hline
+Inward migration (50 kyr)  & 1.297 & 1.066 & -1.830 \\
+Inward migration (100 kyr) & 1.297 & 1.539 & 12.38 \\
+Inward migration (500 kyr) & 1.297 & 1.041 & 1.477 \\
+\hline
+No migration (50 kyr)      & 0.921 & 1.027 & 2.279 \\
+No migration (100 kyr)     & 0.921 & 1.285 & 5.468 \\
+No migration (500 kyr)     & 0.921 & 1.110 & 0.715 \\
+\hline
+Outward migration (50 kyr) & 1.320 & 0.971 & -2.350 \\ %NEED TO RERUN
+Outward migration (100 kyr)& 1.320 & 1.282 & 2.481 \\
+Outward migration (500 kyr)& 1.320 & 1.429 & 1.65 \\
+\hline
+\hline
+\end{tabular}
+\label{results-table}
+\end{table}
+
+Figure \ref{results_fig} displays the results of our simulations. The left panel of Figure \ref{results_fig} shows the evolution of the L4/L5 population ratio for the individual simulaton outward migration case with a duration of 500 kyr, together with a linear fit used to quantify the rate of asymmetry growth. The right panel compares the fitted slopes for all nine simulations as a function of migration duration. These fitted slopes do not represent the instantaneous ratio itself, but rather its averaged evolution over the migration timescale, and are a smoother reflection of L4/L5 asymmetry behavior given the clear noise shown in the left panel. Obtained instantaneous initial and final ratios and ratio evolution slopes are displayed in Table \ref{results-table}.
+
+\begin{figure}[t]
+    \centering
+    \begin{minipage}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/ratio_plot.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/Migration_Results.png}
+    \end{minipage}
+    \caption{\textbf{Left:} Time evolution of the L4/L5 Trojan population ratio for the outward migration case with a migration duration of 500 kyr. The ratio is computed by counting particles librating around the L4 and L5 Lagrange points at each output time. The initial value at $t=0$ corresponds to the post–burn-in configuration. A linear fit to the ratio evolution is shown, and its slope provides a quantitative measure of the rate at which L4/L5 asymmetry develops during migration. \textbf{Right:} The slopes of linear fits to the L4/L5 ratio evolution for all nine simulations, plotted as a function of migration duration. Each point corresponds to a single simulation. Dotted lines connect simulations sharing the same migration type but differing in timescale.}
+    \label{results_fig}
+\end{figure}
+
+
+
+
+
+\section{Discussion and Future Works}\label{sec4} %Zoutong
+%L4/L5 changing ratio graph and why: non-adiabatic vs adiabatic?
+%Essentially just the loss rate of L5 is hitting sweetspot at 100kyr? 
+Interestingly, there was no previous literature on comparing the ratio of planetesimals' loss in L4/L5. Consistent with Pinari et al (2019)\cite{pirani_consequences_2019}, the L4/L5 population ratio remains greater than unity in almost all simulations, indicating consistent asymmetry favoring L4 over L5 throughout migration, regardless of timescale or direction. However, the evolution of this ratio is not monotonic and depends sensitively on migration timescale and direction. The study's interesting conclusion is that this preference evolved over time during migration. While the 100 kyr cases exhibit the largest positive slopes in several scenarios, both shorter and longer migration timescales show weaker or more variable trends.
+
+In the 50kyr cases, the negative or weak slopes suggest that the migration proceeds too rapidly for the Trojan populations to respond adiabatically, such that resonance distortion is dominated by chaotic scattering rather than systematic asymmetry growth. Under these conditions, the relative depletion of L4 and L5 can be stochastic, leading to sign reversals in the fitted slopes. In the 500kyr cases, this might be the classic adiabatic case, where the slower migration rate gives the system time to adjust to the evolving resonance structure, resulting in modest asymmetry growth. Somewhere in the middle of the non-adiabatic and the adiabatic case sits 100kyr, where it just reaches its 1-1 resonance and the sweeping rate is more efficient compared to the previous two cases, producing the largest measured slopes in several simulations. Based on the theory of Li et al. \cite{Li2023}, L4 is more stable than L5; therefore, our results suggest that this stability difference is most effectively expressed at intermediate migration timescales, rather than universally across all migration regimes. Our results reinforce Trojan population asymmetries as a sensitive dynamical tracer of giant planet migration histories in both the Solar System and exoplanetary systems worthy of future exploration.
+
+For future work, there are several possibilities to proceed. Increasing the total planetesimal number will increase the resolution of the data. Given the sensitivity of the shortest migration cases to stochastic effects, additional realizations would help quantify the role of finite-number noise. To determine whether the 100kyr peak is numerical or due to error, we could increase the timescale increment of interest: every 10kyr between 50kyr and 200kyr. To further investigate whether it is due to the replenish and loss of L5 and L4, tracking individual particle's trace and calculating the time spent in each resonance area can be constructive. In theory, a particle would spend more time in L4 than in L5 on average if the trojans were persistent. We have also detected wobbling of Jupiter's orbit during migration due to the orbit of Saturn. Future work can increase the sampling rate to calculate the true period of the wobble. 
+
+\section*{Data availability}
+
+All simulation data that support the findings of this study are openly available in Zenodo at
+\href{https://doi.org/10.5281/zenodo.18004841}{https://doi.org/10.5281/zenodo.18004841}\cite{shen_2025_18004841}.
+
+
+
+\bibliography{sn-bibliography}% common bib file
+%% if required, the content of .bbl file can be included here once bbl is generated
+%%\input sn-article.bbl
+
+\end{document}
